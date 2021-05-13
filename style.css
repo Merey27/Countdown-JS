@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.content {
+    position: fixed;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day, .hour, .minute, .second, .month {
+    font-size: 5rem;
+}
+
+.waiting {
+    height: 50vh
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    h2 {
+        font-size: 8rem;
+    }
+
+    .countdown {
+        flex-direction: column;
+    }
+
+    .day, .hour, .minute, .second, .month {
+        font-size: 10rem;
+    }
+
+    h3 { font-size: 3rem }
+
+    .container-day, .container-hour, .container-minute, .container-second, .container-month {
+        margin: 2rem;
+    }
+}
